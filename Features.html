@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+ 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700" rel="stylesheet"> <!-- Font // ENCODE SANS -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> <!-- Font // Fairplay Display -->
+	<link rel="stylesheet" href="style.css">
+	<link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet"> <!-- UseIcon -->
+	<title>Palm Pacific</title>
+</head>
+<body>
+<div class="container d-none d-sm-block">
+<div class="bgcolor1 fontcolour1 bgcolor5" id="booking">
+	<button class="pt-2 pb-4 fontcolour1" data-toggle="modal" data-target="#BookingModal">Booking</button>
+</div>
+</div>
+<!-- Booking Modal -->
+<div class="modal fade" id="BookingModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+			<div class="row">
+				<div class="col-1" style="float:right;">
+						<h5 style="color:white;">X</h5>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-12 aligncenter bgcolorwhite">
+						<hr>
+							<h3>Booking</h3>
+						<hr>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-12 bgcolorwhite pt-3 pl-5 pb-3">
+				
+					<div class="row">
+						<h5>Check-In :</h5>
+					</div>
+					<div class="row ">
+						<input type="date" name=""> <!-- inputs Check-In -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Check-Out :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="date" name=""> <!-- inputs Check-Out -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Room Type :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="" name=""> <!-- inputs Room Type -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Promo Code :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="" name=""> <!-- inputs Promo Code -->	
+					</div>
+					<div class="row mt-2 pr-5" style="float: right;">
+						<button class="fontcolour1" style="width: 100px; height: 35px;">Continue</button>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Special Offers -->
+<div class="modal fade" id="SpecialOffersModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+		<div class="row">
+			<div class="col" style="float:right;">
+					<h5 style="color:white;">X</h5>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col aligncenter bgcolorwhite">
+					<hr>
+						<h3>Offers</h3>
+					<hr>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col bgcolorwhite pb-3">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="airylogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 20% untuk pemesanan melalui Aplikasi Airy</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="megalogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Nikmati Pilihan Welcome Drink Gratis Dengan menggunakan Kartu Kredit Mega</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="garudalogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 15% di LemonGrass Pacific Hotel dengan menunjukkan membership Garuda</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5" style="padding-bottom: 148px;">
+				      		<img src="travelokalogo.png" width="200" height="100">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 50% di Hotel Palm Pacific dengan menggunakan Kode Promo : <b>Berkah</b></h2>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="oi oi-caret-left" style="color:brown; margin-top: 250px;"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="oi oi-caret-right" style="color:brown;  margin-top: 250px;"></span>
+				  </a>
+				</div>
+			</div>
+			</div>			
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SO -->
+	<div class="container-fluid d-none d-sm-block"> <!--Header -->
+		<div id="logoholder"style="padding-left: 9px; padding-top: 30px;">
+			<div>
+				<img src="logo.png" width="150" height="100">
+			</div>
+		</div>
+		<div id="logoholderbrown"></div>
+		<div id="logoholderbrowner"></div>
+		<div class="row">
+			<div class="col pt-3" id="headertop"></div>
+		</div>
+		<div class="row">
+			<div class="col" id="headerbody">
+				<div class="row" style="padding-left: 8em;">
+					<div class="col"><span class="oi oi-check"></span>&nbsp;Best <b>Rate</b></div>
+					<div class="col"><span class="oi oi-wifi"></span>&nbsp;Free <b>Wifi Access</b></div>
+					<div class="col"><span class="oi oi-phone"></span>&nbsp;Reservations <b>+081 777-888</b></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<nav class="navbar navbar-expand-sm sticky-top d-none d-sm-block">
+	<div class="container-fluid" style="padding-left: 15em;">
+		<ul class="navbar-nav">
+  		<li class="nav-item">
+      		<a class="nav-link" href="index.html">Home</a>
+    	</li>
+  		<li class="nav-item">
+      		<a class="nav-link" href="Features.html">Features</a>
+    	</li>
+  		<li class="nav-item">
+      		<a class="nav-link" href="Dining1.html">Dining</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="Rooms.html">Rooms</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="#"  data-toggle="modal" data-target="#SpecialOffersModal">Offers</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="Blog.html">Blog & Press</a>
+    	</li>
+	</ul>
+	</div>
+</nav>
+<div class="container-fluid d-none d-sm-block">
+	<div class="row">
+		<div class="col-8" style="padding-top: 200px; padding-bottom: 200px; background-size: cover; background-image: url('Pictures/hotel/kuta.jpg');">
+			<div class="row">
+				<div class="col-10"></div>
+				<div class="col-2 bgcolor1 pt-5 pb-5">
+					<div class="row">
+						<div class="col playfairfont fontcolour1">
+							<h5 id="titlet">Pantai Kuta</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col bgcolorwhite">
+			<div class="row bgcolor1">
+				<div class="col aligncenter pl-3 pr-3 pt-5 pb-5 playfairfont fontcolour1"><h2>Tourist Attractions</h2> <hr></div>
+			</div>
+			<div class="row">
+				<div class="col pl-3 pr-2 pt-2 pb-3">&nbsp; Kuta Beach is on the western side of the island's narrow isthmus. It's considered Bali's most famous beach resort destination. Kuta Beach is also minutes away from the Ngurah Rai International Airport in Tuban. The nearby resorts of Tuban, Legian and Seminyak are all within close walking distance.  Once a simple, rustic and quiet fishing village, Kuta Beach has witnessed a transformation over the past years. This is due to the rise of various accommodation options, dining and shopping scenes. <br><br> &nbsp;The rapid growth owes much to visitors, beachcombers and art lovers from nearby Australia. Expatriates also helped pioneer surfing in Kuta, as well.  A rather frenzied traffic scene has become commonplace here. <br><br> &nbsp; Even so, Kuta Beach continues to attract thousands of visitors every year with its unique charm. Kuta Beach is regularly fully-booked over the peak seasons. This is usually from July to August and the holiday season for Christmas and New Year. Travellers look forward to visiting Kuta for a pleasant and affordable Bali escape.
+		</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid d-none d-sm-block">
+	<div class="row">
+		<div class="col bgcolorwhite">
+			<div class="row bgcolor1">
+				<div class="col aligncenter pl-3 pr-3 pt-5 pb-5 playfairfont fontcolour1"><h2>Hotel Features</h2><hr></div>
+			</div>
+			<div class="row">
+				<div class="col pl-3 pr-2 pt-2 pb-2">With plentiful sunbeams streaming through its full-length skylight, our Indoor Pool is an excellent place to swim laps, relax with family, or simply unwind in the peaceful surroundings.<br><br>
+				&nbsp;For your convenience, items such as goggles, swim caps, swimsuits, and children's toys are all available upon request. Ask the Concierge for details.</div>
+			</div>
+		</div>
+		<div class="col-8 pl-0" style="padding-top: 200px; padding-bottom: 200px; background-size: cover; background-image: url('Pictures/hotel/beach-chairs-clouds-hotel-338504.jpg');">
+				<div class="col-2 bgcolor1 pt-5 pb-5">
+					<div class="row">
+						<div class="col playfairfont fontcolour1">
+							<h5 id="titleh">Swimming Pool</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-10"></div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid d-none d-sm-block">
+	<div class="row pt-5 pb-5 bgcolor4">
+		<div class="col bgcolorwhite pr-5 pl-5 pt-3 pb-3">
+			<h5>Overall Features</h5>
+			<hr>
+			<span class="oi oi-plus"></span>&nbsp;Nearby Beach <br>
+			<span class="oi oi-plus"></span>&nbsp;5-Stars Service <br>
+			<span class="oi oi-plus"></span>&nbsp;Huge Swimming Pool <br>
+			<span class="oi oi-plus"></span>&nbsp;Blalalalal
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid bgcolor2 d-none d-sm-block"> <!--Footer-->
+	<div class="row aligncenter fontcolour1">
+		<div class="col pb-2">
+					<hr style="border-color: #e8cbb5;">
+		2022-2026 Palm Pacific International Hotel. All Rights Reserved
+	</div>
+	</div>
+</div>
+<!-- Mobile -->
+<div class="container-fluid d-block d-sm-none encodefont bgcolor1">
+	<div class="row bgcolor2">
+		<div class="col pt-3">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col bgcolorwhite aligncenter"><img src="logo.png" width="100" height="100"></div>
+	</div>
+	<div class="row">
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Best <b>Rate</b></p>
+		</div>
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Free Wi-fi Access</p>
+		</div>
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Reservations <b>+081 777-888</b></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col playfairfont fontcolour1 pt-2 aligncenter">
+			<hr>
+				<h5>Tourist Attractions</h5>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col testimage pl-5 pr-5" style="padding-top: 200px;">
+			<div class="row mr-5 ml-5 bgcolor1">
+				<div class="col aligncenter pt-2 pb-2 fontcolour1 playfairfont">
+					Pantai Kuta
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row bgcolorwhite">
+		<div class="col aligncenter pt-2 pb-2 fontcolour2 playfairfont">
+			Descriptions
+		</div>
+	</div>
+	<div class="row">
+		<div class="col playfairfont fontcolour1 pt-2 aligncenter">
+			<hr>
+				<h5>Hotel Features</h5>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col testimage pl-5 pr-5" style="padding-top: 200px;">
+			<div class="row mr-5 ml-5 bgcolor1">
+				<div class="col aligncenter pt-2 pb-2 fontcolour1 playfairfont">
+					Pantai Kuta
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row bgcolorwhite">
+		<div class="col aligncenter pt-2 pb-2 fontcolour2 playfairfont">
+			Descriptions
+		</div>
+	</div>
+	<div class="row bgcolor4">
+		<div class="col ">
+			<div class="row pt-5 pl-5 pr-5 playfairfont">
+				<div class="col bgcolorwhite pt-2">
+					<h5>Overall Features</h5>
+					<hr>
+				</div>
+			</div>
+			<div class="row pt-2 pl-5 pr-5 playfairfont">
+				<div class="col bgcolorwhite pt-2">
+					<h5>Our Commitments</h5>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col bgcolor1 fontcolour1 aligncenter pt-1 pb-1" style="font-size: 6px">
+			2022-2026 Palm Pacific International Hotel. All Rights Reserved <img src="/open-iconic/svg/menu.svg">
+		</div>
+	</div>
+</div>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

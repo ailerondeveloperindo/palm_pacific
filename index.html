@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+ 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700" rel="stylesheet"> <!-- Font // ENCODE SANS -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> <!-- Font // Fairplay Display -->
+	<link rel="stylesheet" href="style.css">
+	<link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet"> <!-- UseIcon -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> <!-- AngularJS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Palm Pacific</title>
+	<style type="text/css">
+		#webdescription{
+			position: absolute;
+			width: 450px;
+			height: 286px;
+			background-color: #736357bb;
+			z-index: 1;
+			margin-top: 14em;
+			margin-left: 4em;
+			padding: 10px 20px 10px 20px;
+		}
+	</style>
+<link rel="shortcut icon" type="image/x-icon" href="logoa.png" />
+</head>
+<body ng-app="home">
+<!-- Special Offers -->
+<div class="modal fade" id="SpecialOffersModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+		<div class="row">
+			<div class="col" style="float:right;">
+					<h5 style="color:white;">X</h5>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col aligncenter bgcolorwhite">
+					<hr>
+						<h3>Offers</h3>
+					<hr>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col bgcolorwhite pb-3">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="airylogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 20% untuk pemesanan melalui Aplikasi Airy</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="megalogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Nikmati Pilihan Welcome Drink Gratis Dengan menggunakan Kartu Kredit Mega</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="garudalogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 15% di LemonGrass Pacific Hotel dengan menunjukkan membership Garuda</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5" style="padding-bottom: 148px;">
+				      		<img src="travelokalogo.png" width="200" height="100">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 50% di Hotel Palm Pacific dengan menggunakan Kode Promo : <b>Berkah</b></h2>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="oi oi-caret-left" style="color:brown; margin-top: 250px;"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="oi oi-caret-right" style="color:brown;  margin-top: 250px;"></span>
+				  </a>
+				</div>
+			</div>
+			</div>			
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SO -->
+<!-- Booking Modal -->
+<div class="modal fade" id="BookingModal" tabindex="-1" role="dialog" aria-hidden="true" ng-controller="personctrl">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+			<div class="row">
+				<div class="col-1" style="float:right;">
+						<h5 style="color:white;">X</h5>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-12 aligncenter bgcolorwhite">
+						<hr>
+							<h3>Booking</h3>
+						<hr>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-12 bgcolorwhite pt-3 pl-5 pb-3">
+				
+					<div class="row">
+						<h5>Check-In :</h5>
+					</div>
+					<div class="row ">
+						<input type="date" id="checkin"> <!-- inputs Check-In -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Check-Out :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="date" id="checkout"> <!-- inputs Check-Out -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Room Type :</h5>
+					</div>
+					<div class="row mt-1">
+						<select id="list">
+							<option>Regular Room</option>
+							<option>Deluxe Room</option>
+							<option>Presidential Room</option>
+						</select> <!-- inputs Room Type -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Promo Code :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="text" id="promocode"> <!-- inputs Promo Code -->	
+					</div>
+					<div class="row mt-1">
+						<span class="oi oi-people">&nbsp; {{persons}} Guests	
+					</div>
+					<div class="row mt-2 pr-5" style="float: right;">
+						<button class="fontcolour1" style="width: 100px; height: 35px;" onclick="CheckForm()">Continue</button>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Booking modal Continue -->
+<div class="modal fade" id="BookingModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+			<div class="row">
+				<div class="col-1" style="float:right;">
+						<h5 style="color:white;">X</h5>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-12 aligncenter bgcolorwhite">
+						<hr>
+							<h3>Booking</h3>
+						<hr>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-12 bgcolorwhite pt-3 pl-5 pb-3">
+				<form>
+					<div class="row">
+						<h5>Name :</h5>
+					</div>
+					<div class="row ">
+						<input type="text" id="name"> <!-- inputs Check-In -->	
+					</div>
+					<div class="row mt-2">
+						<h5>E-Mail :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="email" id="email"> <!-- inputs Check-Out -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Credit Card / Debit Card :</h5>
+					</div>
+					<div class="row mt-1">
+						<select id="selectcard">
+							<option>Kartu Bank Mega</option>
+							<option>Kartu Kredit Bank Mega</option>	
+							<option>Kartu Kredit Bank Mandiri</option>							
+						</select> <!-- inputs Promo Code -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Card Number :</h5>
+					</div>
+					<div class="row mt-1">
+							<input type="text" id="cardnumber">						 <!-- inputs Promo Code -->	
+					</div>
+					<div class="row mt-2 pr-5" style="float: right;">
+						<button class="fontcolour1" style="width: 100px; height: 35px;" onclick="CheckForm2()">Done</button>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Booking modal End -->
+<div class="modal fade" id="BookingModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+			<div class="row">
+				<div class="col-1" style="float:right;">
+						<h5 style="color:white;">X</h5>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-12 aligncenter bgcolorwhite">
+						<hr>
+							<h3>Booking</h3>
+						<hr>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-12 bgcolorwhite pt-3 pl-5 pb-3">
+				<form>
+					<div class="row">
+						<h5>Name :</h5>
+					</div>
+					<div class="row ">
+						<p></p>
+					</div>
+					<div class="row mt-2">
+						<h5>Room Type:</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="email" id="email"> <!-- inputs Check-Out -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Total</h5>
+						<hr>
+						<p><b>Room</b> : Rp 1.500.000</p>
+						<p><b>Discount</b> : Rp 250.000</p>
+						<p><b>Tax</b> : Rp 20.000</p>
+						<p><b>Total</b> : Rp 1.270.000</p>
+
+					</div>
+					<div class="row mt-1">
+							<input type="text" id="cardnumber">						 <!-- inputs Promo Code -->	
+					</div>
+					<div class="row mt-2 pr-5" style="float: right;">
+						<button class="fontcolour1" style="width: 100px; height: 35px;" onclick="$('#BookingModal3').modal('hide')">Done</button>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container d-none d-sm-block">
+<div class="bgcolor1 fontcolour1 bgcolor5" id="booking">
+	<button class="pt-2 pb-4 fontcolour1" data-toggle="modal" data-target="#BookingModal">Booking</button>
+</div>
+</div>
+	<div class="container-fluid d-none d-sm-block" > <!--Header -->
+		<div id="logoholder"style="padding-left: 9px; padding-top: 30px;">
+			<div>
+				<img src="logo.png" width="150" height="100">
+			</div>
+		</div>
+		<div id="logoholderbrown"></div>
+		<div id="logoholderbrowner"></div>
+		<div class="row">
+			<div class="col" id="headerbody">
+			</div>
+		</div>
+	</div>
+<div class="container-fluid d-none d-sm-block">
+		<div id="webdescription">
+			<div class="row">
+				<div class="col">
+					<p class="playfairfont fontcolour1" style="text-align: center; font-size: 30px;">"Private Hotel Near Exotic and Beautiful Beach"</p>
+					<p class="fontcolour1" style="text-align: left;">Hotel Palm Pacific adalah Hotel Bintang Lima yang terletak di Surga Travelling Indonesia, Bali. Terletak dipinggir pantai yang tertutup membuat privasi menjadi hal yang 
+					diunggulkan di Hotel ini. Pelayanan yang diberikan oleh Karyawan kami merupakan Pelayanan terbaik &nbsp; <b id="readmore">Read More</b></p>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="background-color: #eeeeee">
+			<div class="col" id="bodyimage"></div>
+		</div>
+	</div>
+<div class="d-flex  justify-content-center bgcolor3">
+	<div class="p-4" style="">
+      	<a href="index.html">Home</a>
+	</div>
+	<div class="p-4">
+      	<a href="Features.html">Features</a>
+	</div>
+	<div class="p-4">
+      	<a href="Dining1.html">Dining</a>
+	</div>
+	<div class="p-4">
+      	<a href="Rooms.html">Rooms</a>
+	</div>
+	<div class="p-4">
+      	<a href="#"  data-toggle="modal" data-target="#SpecialOffersModal">Offers</a>
+	</div>
+	<div class="p-4">
+      	<a href="Blog.html">Blog</a>
+	</div>
+</div>
+<div class="container-fluid px-5 pt-5 pb-5 bgcolor1 d-none d-sm-block">
+	<div class="row">
+		<div class="col aligncenter fontcolour1 playfairfont pb-3" style="font-size: 34px;">
+			Special Offers
+		</div>
+	</div>
+	<div class="row">
+		<div class="container-fluid">
+			<div class="row pb-3" style="padding-left: 6em;">
+				<div class="col-3  bgcolorwhite aligncenter">
+					<div class="row">
+						<div class="col pt-2">
+				      		<img src="airylogo.png" width="200" height="200" class="img-fluid">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col pt-2">
+							<p>Diskon 20% Untuk pemesanan melalui Aplikasi Airy</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3  offset-1  bgcolorwhite  aligncenter">
+					<div class="row">
+						<div class="col pt-2">
+				      		<img src="megalogo.png" width="200" height="200" class="img-fluid">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col  pt-2">
+							<p>Nikmati Pilihan Welcome Drink Gratis Dengan menggunakan Kartu Kredit Mega</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 offset-1  bgcolorwhite  aligncenter">
+					<div class="row">
+						<div class="col pt-5 pb-5">
+				      		<img src="garudalogo.png" width="200" height="100" class="img-fluid">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col  pt-3">
+							<p>Diskon 15% di LemonGrass Pacific Hotel dengan menunjukkan membership Garuda</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row"></div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid bgcolor2 d-none d-sm-block"> <!--Footer-->
+	<div class="row aligncenter fontcolour1">
+		<div class="col pb-2">
+					<hr style="border-color: #e8cbb5;">
+		2022-2026 Palm Pacific International Hotel. All Rights Reserved
+	</div>
+	</div>
+</div>
+
+<!-- Mobile -->
+<div class="container-fluid d-block d-sm-none encodefont" style="background-color: #303952;">
+	<div class="row bgcolor2">
+		<div class="col pt-3">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col bgcolorwhite aligncenter pt-5 pb-5"><img src="logo.png" width="75" height="50"></div>
+	</div>
+	<div class="row">
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Best <b>Rate</b></p>
+		</div>
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Free Wi-fi Access</p>
+		</div>
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Reservations <b>+081 777-888</b></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col testimage" style="padding-top: 185px;"></div>
+	</div>
+	<div class="row bgcolor2  pt-2 pb-2 ">
+		<div class="col playfairfont fontcolour1" style="font-size: 15px;">
+			"Private Hotel Near Exotic and Beautiful Beach"
+		</div>
+		<div class="col fontcolour1" style="font-size: 10px">
+			Hotel Palm Pacific adalah Hotel Bintang Lima yang terletak di Surga Travelling Indonesia, Bali. Terletak dipinggir pantai yang tertutup membuat privasi menjadi hal yang 
+			diunggulkan di Hotel ini. Pelayanan yang diberikan oleh Karyawan kami merupakan Pelayanan terbaik &nbsp; <b id="readmore">Read More<b>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col playfairfont fontcolour1 pt-2 aligncenter">
+			<hr>
+			<h5>Special Offers</h5>
+			<hr>
+		</div>
+	</div>
+	<div class="row bgcolor2 fontcolour1">
+		<div class="col-8">
+		</div>
+		<div class="col pt-3">
+			<p> Diskon 20% Untuk pemesanan melalui Aplikasi Airy </p>
+		</div>
+	</div>
+	<div class="row bgcolor2 fontcolour1" style="font-size: 12px">
+		<div class="col pt-3">
+			<p>Nikmati Pilihan Welcome Drink Gratis Dengan menggunakan Kartu Kredit Mega</p>
+		</div>
+		<div class="col-8 testimage">
+		</div>
+	</div>
+	<div class="row bgcolor2 fontcolour1">
+		<div class="col-8 testimage">
+		</div>
+		<div class="col pt-3" style="font-size: 12px">
+			<p>Diskon 15% di LemonGrass Pacific Hotel dengan menunjukkan membership Garuda</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col bgcolor1 fontcolour1 aligncenter pt-1 pb-1" style="font-size: 6px">
+			2022-2026 Palm Pacific International Hotel. All Rights Reserved
+		</div>
+	</div>
+</div>
+<!--AngularJS JQUERY Dsb -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+ <script type="text/javascript">
+	$(document).ready(function(){
+		$("#SpecialOffersModal").modal("show");
+	});
+	function CheckForm()
+	{
+		if($("#checkin").val() == '')
+		{
+			alert("Please Input Your Preferred Check-In Date");
+		}
+		else if ($("#checkout").val() == '')
+		{
+			alert("Please Input Your Preferred Check-Out Date");
+		}
+		else if ($("#promocode").val() != 'Berkah' )
+		{
+			alert("Promo Code Doesn't Exist");
+		}
+		else{
+			$("#BookingModal").modal("hide");
+			$("#BookingModal2").modal("show");
+		}
+	}
+	function CheckForm2()
+	{
+		var str = new String(("#cardnumber").val());
+		if($("#name").val() == '')
+		{
+			alert("Please Input Your Name");
+		}
+		else if ($("#cardnumber").val() == '')
+		{
+			alert("Please Input Your Card Number");
+		}
+		else if (str.length > 12)
+		{
+			alert("Card Number shouldn't be More than 12 Digits");
+		}
+		else{
+			$("#BookingModal2").modal("hide");
+			$("#BookingModal3").modal("show");
+		}
+	}
+/* Angular JS */
+</script>
+</body>
+</html>

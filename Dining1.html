@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+ 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700" rel="stylesheet"> <!-- Font // ENCODE SANS -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> <!-- Font // Fairplay Display -->
+	<link rel="stylesheet" href="style.css">
+	<title>Palm Pacific</title>
+	<link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet"> <!-- UseIcon -->
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<!-- Dont Delete This-->
+<div class="container d-none d-sm-block">
+<div class="bgcolor1 fontcolour1 bgcolor5" id="booking">
+	<button class="pt-2 pb-4 fontcolour1" data-toggle="modal" data-target="#BookingModal">Booking</button>
+</div>
+</div>
+<!-- Booking Modal -->
+<div class="modal fade" id="BookingModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+			<div class="row">
+				<div class="col-1" style="float:right;">
+						<h5 style="color:white;">X</h5>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-12 aligncenter bgcolorwhite">
+						<hr>
+							<h3>Booking</h3>
+						<hr>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-12 bgcolorwhite pt-3 pl-5 pb-3">
+				
+					<div class="row">
+						<h5>Check-In :</h5>
+					</div>
+					<div class="row ">
+						<input type="date" name=""> <!-- inputs Check-In -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Check-Out :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="date" name=""> <!-- inputs Check-Out -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Room Type :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="" name=""> <!-- inputs Room Type -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Promo Code :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="" name=""> <!-- inputs Promo Code -->	
+					</div>
+					<div class="row mt-2 pr-5" style="float: right;">
+						<button class="fontcolour1" style="width: 100px; height: 35px;">Continue</button>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Special Offers -->
+<div class="modal fade" id="SpecialOffersModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+		<div class="row">
+			<div class="col" style="float:right;">
+					<h5 style="color:white;">X</h5>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col aligncenter bgcolorwhite">
+					<hr>
+						<h3>Offers</h3>
+					<hr>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col bgcolorwhite pb-3">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="airylogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 20% untuk pemesanan melalui Aplikasi Airy</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="megalogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Nikmati Pilihan Welcome Drink Gratis Dengan menggunakan Kartu Kredit Mega</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="garudalogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 15% di LemonGrass Pacific Hotel dengan menunjukkan membership Garuda</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5" style="padding-bottom: 148px;">
+				      		<img src="travelokalogo.png" width="200" height="100">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 50% di Hotel Palm Pacific dengan menggunakan Kode Promo : <b>Berkah</b></h2>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="oi oi-caret-left" style="color:brown; margin-top: 250px;"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="oi oi-caret-right" style="color:brown;  margin-top: 250px;"></span>
+				  </a>
+				</div>
+			</div>
+			</div>			
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SO -->
+	<div class="container-fluid d-none d-sm-block"> <!--Header -->
+		<div id="logoholder"style="padding-left: 9px; padding-top: 30px;">
+			<div>
+				<img src="logo.png" width="150" height="100">
+			</div>
+		</div>
+		<div id="logoholderbrown"></div>
+		<div id="logoholderbrowner"></div>
+		<div class="row">
+			<div class="col pt-3" id="headertop"></div>
+		</div>
+		<div class="row">
+			<div class="col" id="headerbody">
+				<div class="row" style="padding-left: 8em;">
+					<div class="col"><span class="oi oi-check"></span>&nbsp;Best <b>Rate</b></div>
+					<div class="col"><span class="oi oi-wifi"></span>&nbsp;Free <b>Wifi Access</b></div>
+					<div class="col"><span class="oi oi-phone"></span>&nbsp;Reservations <b>+081 777-888</b></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<nav class="navbar navbar-expand-sm sticky-top d-none d-sm-block">
+	<div class="container-fluid" style="padding-left: 15em;">
+		<ul class="navbar-nav">
+  		<li class="nav-item">
+      		<a class="nav-link" href="index.html">Home</a>
+    	</li>
+  		<li class="nav-item">
+      		<a class="nav-link" href="Features.html">Features</a>
+    	</li>
+  		<li class="nav-item">
+      		<a class="nav-link" href="Dining1.html">Dining</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="Rooms.html">Rooms</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="#"  data-toggle="modal" data-target="#SpecialOffersModal">Offers</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="Blog.html">Blog & Press</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="#">About Us</a>
+    	</li>
+	</ul>
+	</div>
+</nav>
+<div class="container-fluid bgcolor4 pb-4 d-none d-sm-block">
+	<div class="row">
+		<div class="col aligncenter pt-3 pb-3 playfairfont fontcolour1"><h1>Dining</h1></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col bgcolorwhite">
+				<p style="font-size: 20px;">&nbsp;Dining at Palm Pacific Hotel in an indulgence of palate-pleasing Balinese, Italian, and international cuisines at The Lounge. Set against the backdrop of Kuta Beach and the Indian Ocean beyond, these restaurants blend contemporary luxury with beachside tranquility to create unique fine dining atmosphere.<br><br>&nbsp;Taste the exquisite blend of international flavors infused with local twists, delicately crafted by our team of culinary experts. Wash down the succulent delights with signature cocktails or classic drinks. Complete your experience with a table facing the beach, placing you and your loved one in the best seats to enjoy the star-studded night sky.
+				</p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col aligncenter pt-3 pb-3 playfairfont fontcolour1"><h4>Featured</h4></div>
+	</div>
+	<div class="row" style="padding-left: 13em;">
+		<div class="col-4 bgcolorwhite" style="padding-top: 15em; background-image: url('Pictures/Makanan/ayam_taliwang.jpg'); background-size :cover;">
+			<div class="row ml-3 mr-3">
+				<div class="col aligncenter playfairfont fontcolour1" style="background-color: #736357ef; ">
+					Ayam Taliwang
+				</div>
+			</div>
+		</div>
+		<div class="col-4 offset-2 bgcolorwhite testimage" style="padding-top: 15em; background-image: url('Pictures/Makanan/Nasi_Campur.jpg'); background-size :cover;">
+			<div class="row ml-3 mr-3">
+				<div class="col aligncenter playfairfont fontcolour1" style="background-color: #736357ef; ">
+					Nasi Campur
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-5" style="padding-left: 13em;">
+		<div class="col-4 bgcolorwhite testimage" style="padding-top: 15em;   background-image: url('Pictures/Makanan/Bruschetta.jpg'); background-size :cover;">
+			<div class="row ml-3 mr-3">
+				<div class="col aligncenter playfairfont fontcolour1" style="background-color: #736357ef; ">
+					Bruschetta
+				</div>
+			</div>
+		</div>
+		<div class="col-4 offset-2 bgcolorwhite testimage" style="padding-top: 15em; background-image: url('Pictures/Makanan/frozenmock.jpg'); background-size :cover;">
+			<div class="row ml-3 mr-3">
+				<div class="col aligncenter playfairfont fontcolour1" style="background-color: #736357ef; ">
+					Frozen Mocktail
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+<div class="container-fluid bgcolorwhite d-none d-sm-block">
+	<div class="row">
+		<div class="col aligncenter pt-3 pb-3 playfairfont"><h4>Menu</h4></div>
+	</div>
+	<div class="row">
+		<ul class="nav pl-5 pb-2">
+		  <li class="active"><a data-toggle="tab" href="#app" style="color:black;">Appetizer</a></li>
+		  <li ><a data-toggle="tab" href="#mainc" style="color:black;">Main Course</a></li>
+		  <li><a data-toggle="tab" href="#bever" style="color:black;">Beverages</a></li>
+		</ul>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col pl-5">
+			<div class="tab-content">
+			  <div id="app" class="tab-pane fade">
+			  		<div class="row  mb-2 pt-0">
+			  			<div class="col-3">
+			  				<img src="Pictures/Makanan/Bruschetta.jpg" width="300" height="200">
+			  			</div>
+			  			<div class="col">
+			  				<h4>Bruschetta</h4>
+			  				<p>Bruschetta is an antipasto from Italy consisting of grilled bread rubbed with garlic and topped with olive oil and salt. Variations may include toppings of tomato, vegetables, beans, cured meat, or cheese.
+			  				</p>
+			  				<h5>Price : <b>Rp 48.000,-</b> (8 pcs)</h5>
+			  			</div>
+			  		</div>
+			  		<div class="row mt-2 mb-2">
+			  			<div class="col-3">
+			  				<img src="Pictures/Makanan/Lumpia.jpg" width="300" height="200">
+			  			</div>
+			  			<div class="col">
+			  				<h4>Spring Roll / Lumpia</h4>
+			  				<p>Spring rolls are a large variety of filled, rolled appetizers or dim sum found in East Asian, Southeast Asian cuisine and South Asian cuisine. The name is a literal translation of the Chinese chūn juǎn.
+			  				</p>
+			  				<h5>Price : <b>Rp 25.000,-</b> (5 pcs)</h5>
+			  			</div>
+			  		</div>
+			  </div>
+			  <div id="mainc" class="tab-pane fade">
+			  		<div class="row  mb-2 pt-0">
+			  			<div class="col-3">
+			  				<img src="Pictures/Makanan/Bruschetta.jpg" width="300" height="200">
+			  			</div>
+			  			<div class="col">
+			  				<h4>Bruschetta</h4>
+			  				<p>Bruschetta is an antipasto from Italy consisting of grilled bread rubbed with garlic and topped with olive oil and salt. Variations may include toppings of tomato, vegetables, beans, cured meat, or cheese.
+			  				</p>
+			  				<h5>Price : <b>Rp 48.000,-</b> (8 pcs)</h5>
+			  			</div>
+			  		</div>
+			  		<div class="row mt-2 mb-2">
+			  			<div class="col-3">
+			  				<img src="Pictures/Makanan/Cream-Cheese-Jalapeno.jpg" width="300" height="200">
+			  			</div>
+			  			<div class="col">
+			  				<h4>Spring Roll / Lumpia</h4>
+			  				<p>Spring rolls are a large variety of filled, rolled appetizers or dim sum found in East Asian, Southeast Asian cuisine and South Asian cuisine. The name is a literal translation of the Chinese chūn juǎn.
+			  				</p>
+			  				<h5>Price : <b>Rp 25.000,-</b> (5 pcs)</h5>
+			  			</div>
+			  		</div>
+			  </div>
+			  <div id="bever" class="tab-pane fade">
+			  		<div class="row  mb-2 pt-0">
+			  			<div class="col-3">
+			  				<img src="Pictures/Makanan/Bruschetta.jpg" width="300" height="200">
+			  			</div>
+			  			<div class="col">
+			  				<h4>Bruschetta</h4>
+			  				<p>Bruschetta is an antipasto from Italy consisting of grilled bread rubbed with garlic and topped with olive oil and salt. Variations may include toppings of tomato, vegetables, beans, cured meat, or cheese.
+			  				</p>
+			  				<h5>Price : <b>Rp 48.000,-</b> (8 pcs)</h5>
+			  			</div>
+			  		</div>
+			  		<div class="row mt-2 mb-2">
+			  			<div class="col-3">
+			  				<img src="Pictures/Makanan/Cream-Cheese-Jalapeno.jpg" width="300" height="200">
+			  			</div>
+			  			<div class="col">
+			  				<h4>Spring Roll / Lumpia</h4>
+			  				<p>Spring rolls are a large variety of filled, rolled appetizers or dim sum found in East Asian, Southeast Asian cuisine and South Asian cuisine. The name is a literal translation of the Chinese chūn juǎn.
+			  				</p>
+			  				<h5>Price : <b>Rp 25.000,-</b> (5 pcs)</h5>
+			  			</div>
+			  		</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid bgcolor2 d-none d-sm-block"> <!--Footer-->
+	<div class="row aligncenter fontcolour1">
+		<div class="col pb-2">
+					<hr style="border-color: #e8cbb5;">
+		2022-2026 Palm Pacific International Hotel. All Rights Reserved
+	</div>
+	</div>
+</div>
+<!-- Mobile -->
+<div class="container-fluid d-block d-sm-none encodefont bgcolor1">
+	<div class="row bgcolor2">
+		<div class="col pt-3">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col bgcolorwhite aligncenter"><img src="logo.png" width="100" height="100"></div>
+	</div>
+	<div class="row">
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Best <b>Rate</b></p>
+		</div>
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Free Wi-fi Access</p>
+		</div>
+		<div class="col-4 bgcolor3 pt-2 fontcolour1" style="font-size: 12px;">
+			<p>Reservations <b>+081 777-888</b></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col playfairfont fontcolour1 pt-2 aligncenter">
+			<hr>
+				<h4>Dining</h4>
+			<hr>
+		</div>
+	</div>
+	<div class="row pt-2 pb-2">
+		<div class="col">
+			<div class="row">
+				<div class="col testimage pt-5">
+					<div class="row">
+						<div class="col-4 offset-4 bgcolor3 encodefont fontcolour1 aligncenter">
+							Food1
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col bgcolorwhite fontcolour2 pt-2 pb-2 aligncenter">
+					<button>Description</button>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col testimage pt-5">
+					<div class="row">
+						<div class="col-4 offset-4 bgcolor3 encodefont fontcolour1 aligncenter">
+							Food1
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col bgcolorwhite fontcolour2 pt-2 pb-2 aligncenter">
+					<button>Description</button>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col testimage pt-5">
+					<div class="row">
+						<div class="col-4 offset-4 bgcolor3 encodefont fontcolour1 aligncenter">
+							Food1
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col bgcolorwhite fontcolour2 pt-2 pb-2 aligncenter">
+					<button>Description</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col bgcolor1 fontcolour1 aligncenter pt-1 pb-1" style="font-size: 6px">
+			2022-2026 Palm Pacific International Hotel. All Rights Reserved <img src="/open-iconic/svg/menu.svg">
+		</div>
+	</div>
+</div>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

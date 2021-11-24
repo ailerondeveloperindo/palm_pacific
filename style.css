@@ -1,0 +1,177 @@
+		html{
+			zoom:100%;
+		}
+		#modalbox{
+			position: fixed;
+			z-index: 11;
+			background-color: #eeeeee;
+		}
+		#headertop{
+			background-color: #594d44;
+		}
+		#headerbody{
+			background-color: #594d44;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			padding-left: 10em;
+			color: #e8cbb5;
+			z-index: 1;
+		}
+		#logoholder{
+			position: absolute;
+			width: 170px;
+			height: 180px;
+			background-color: #eeeeee;
+			top: 0px;
+			z-index: 8;
+			left:50px;
+		}
+		#logoholderbrown{
+			position: absolute;
+			width: 170px;
+			height: 180px;
+			background-color: #736357;
+			top: 0px;
+			z-index: 7;
+			left:45px;
+		}
+		#logoholderbrowner{
+			position: absolute;
+			width: 170px;
+			height: 180px;
+			background-color: #594d44;
+			top: 0px;
+			z-index: 6;
+			left:40px;
+		}
+		#bodyimage{
+			height: 510px;
+			background-image: url('imagehome.png');
+			background-size: cover;
+		}
+		#specialoffer{
+			background-color: #4b4139;
+		}
+		#booking{
+			position: fixed;
+			z-index: 10;
+			transform: rotate(-90deg);
+			top:400px;
+			right:-25px;
+			border: 1px solid #594d44;
+		}
+		#reviews{
+			position: fixed;
+			z-index: 10;
+			transform: rotate(-90deg);
+			top:500px;
+			right:-25px;
+			border: 1px solid #594d44;
+		}
+		#lang{
+			border-style: solid;
+			border-width: 1px;
+			border-color: #eeeeee;
+		}
+		.testimage{
+			background-image: url('imagehome.png');
+			background-size: cover;
+		}
+		.bgcolor1{
+			background-color: #4b4139;
+		}
+		.bgcolor2{
+			background-color: #594d44;
+		}
+		.bgcolor3{
+			background-color: #736357;
+		}
+		.bgcolor4{
+			background-color: #765a46;
+		}
+		.bgcolor5{
+			background-color: #e8cbb5;
+		}
+		.bgcolorwhite{
+			background-color: #eeeeee;
+		}
+		.playfairfont{
+			font-family: 'Playfair Display';
+		}
+		.encodefont{
+			font-family: 'Encode Sans Condensed';
+		}
+		.fontcolour1{
+			color: #e8cbb5;
+		}
+		.fontcolourwhite{
+			color: #eeeeee;
+		}
+		.navbar{
+			background-color: #736357;
+			border-top: 2px solid #594d44;
+			border-bottom: 2px solid #594d44;
+			align-content: center;
+			z-index: 5;
+		}
+		.navbar-nav {
+	    width: 100%;
+	    text-align: center;
+		}
+		.aligncenter{
+			text-align: center;
+		}
+		.row > input{
+			background-color: #dddddd;
+			border-style: solid;
+			border-width: 1.25px;
+			border-color: #4b4139;
+			width: 200px;
+			border-radius: 5px;
+		}
+		.row > select{
+			background-color: #dddddd;
+			border-style: solid;
+			border-width: 1.25px;
+			border-color: #4b4139;
+			width: 200px;
+			border-radius: 5px;
+		}
+		button{
+			background-color: #594d44;
+			border: none;
+		}
+		button:hover{
+			color: #928174;
+		}
+		.modal-content{
+			background-color: rgba(0,0,0,0);
+			border-width: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.modal-dialog{
+			width: 500px;
+		}
+	    > li {
+	      float: none;
+	      display: inline-block;
+	    }
+		li > a {
+			font-size: 20px;
+			font-family: 'Encode Sans Condensed';
+			margin-left: 50px;
+			color: #e8cbb5;
+		}
+		.d-flex{
+			border-top: 2px solid #594d44;
+			border-bottom: 2px solid #594d44;
+		}
+		.p-4 > a {
+			font-size: 20px;
+			font-family: 'Encode Sans Condensed';
+			color: #e8cbb5;
+		}
+		body{
+			font-family: 'Encode Sans Condensed';
+		}

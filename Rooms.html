@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+ 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700" rel="stylesheet"> <!-- Font // ENCODE SANS -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> <!-- Font // Fairplay Display -->
+	<link rel="stylesheet" href="style.css">
+	<link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet"> <!-- UseIcon -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> <!-- AngularJS -->
+	<title>Palm Pacific</title>
+</head>
+<body ng-app="MyApp" ng-controller="roomctrl">
+	<!-- Special Offers -->
+<div class="modal fade" id="SpecialOffersModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+		<div class="row">
+			<div class="col" style="float:right;">
+					<h5 style="color:white;">X</h5>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col aligncenter bgcolorwhite">
+					<hr>
+						<h3>Offers</h3>
+					<hr>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col bgcolorwhite pb-3">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="airylogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 20% untuk pemesanan melalui Aplikasi Airy</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="megalogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Nikmati Pilihan Welcome Drink Gratis Dengan menggunakan Kartu Kredit Mega</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5 pb-5">
+				      		<img src="garudalogo.png" width="200" height="200">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 15% di LemonGrass Pacific Hotel dengan menunjukkan membership Garuda</h2>
+				      	</div>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="row">
+				      	<div class="col-6 aligncenter pt-5" style="padding-bottom: 148px;">
+				      		<img src="travelokalogo.png" width="200" height="100">
+				      	</div>
+				      	<div class="col pl-2 pr-3">
+				      		<h2>Diskon 50% di Hotel Palm Pacific dengan menggunakan Kode Promo : <b>Berkah</b></h2>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="oi oi-caret-left" style="color:brown; margin-top: 250px;"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="oi oi-caret-right" style="color:brown;  margin-top: 250px;"></span>
+				  </a>
+				</div>
+			</div>
+			</div>			
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SO -->
+<!-- Booking Modal -->
+<div class="modal fade" id="BookingModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none  d-sm-block" style="z-index: 13; padding-top: 50px;">
+			<div class="row">
+				<div class="col-1" style="float:right;">
+						<h5 style="color:white;">X</h5>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-12 aligncenter bgcolorwhite">
+						<hr>
+							<h3>Booking</h3>
+						<hr>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-12 bgcolorwhite pt-3 pl-5 pb-3">
+				
+					<div class="row">
+						<h5>Check-In :</h5>
+					</div>
+					<div class="row ">
+						<input type="date" name=""> <!-- inputs Check-In -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Check-Out :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="date" name=""> <!-- inputs Check-Out -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Room Type :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="" name=""> <!-- inputs Room Type -->	
+					</div>
+					<div class="row mt-2">
+						<h5>Promo Code :</h5>
+					</div>
+					<div class="row mt-1">
+						<input type="" name=""> <!-- inputs Promo Code -->	
+					</div>
+					<div class="row mt-2 pr-5" style="float: right;">
+						<button class="fontcolour1" style="width: 100px; height: 35px;">Continue</button>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Of Booking Modal -->
+<!-- Rooms Modal -->
+<div>
+<div class="modal fade" id="RoomModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+		<div class="container-fluid d-none d-sm-block" style="position: fixed; z-index: 13; padding-top: 10px; position: absolute;
+		margin-top: 20px; width: 1100px; margin-left: -295px;">
+				<div class="row">
+					<div class="col-1" style="float:right;">
+							<h5 style="color:white;">X</h5>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col aligncenter bgcolorwhite">
+							<hr>
+								<h4>{{roomtype}}</h4>
+							<hr>
+						</div>
+				</div>
+				<div class="row">
+					<div class="col bgcolorwhite aligncenter pl-5 pr-5 pb-3">
+						<div class="row">
+							<div class="col">
+								<div id="carouselExampleControlsa" class="carousel slide pt-5" data-ride="carousel">
+								  <div class="carousel-inner">
+								    <div class="carousel-item active">
+								      <img ng-src="Pictures/roomimage/{{image}}1.jpg" style="width:100%;height: 300px;">
+								    </div>
+								    <div class="carousel-item">
+								      <img ng-src="Pictures/roomimage/{{image}}2.jpg" style="width:100%;height: 300px;">
+								    </div>
+								    <div class="carousel-item">
+								      <img ng-src="Pictures/roomimage/{{image}}3.jpg" style="width:100%;height: 300px;">
+								    </div>
+								    <div class="carousel-item">
+								      <img ng-src="Pictures/roomimage/{{image}}4.jpg" style="width:100%;height: 300px;">
+								    </div>
+								  </div>
+								  <a class="carousel-control-prev" href="#carouselExampleControlsa" role="button" data-slide="prev">
+						    		<span class="oi oi-caret-left" style="color:brown; margin-top: 380px;"></span>
+								    <span class="sr-only">Previous</span>
+								  </a>
+								  <a class="carousel-control-next" href="#carouselExampleControlsa" role="button" data-slide="next">
+						    		<span class="oi oi-caret-right" style="color:brown;margin-top: 380px;"></span>
+								    <span class="sr-only">Next</span>
+								  </a>
+								</div>
+							</div>
+							<div class="col aligncenter">
+								<p><h5>Room Size</h5></p>
+								<hr>
+								<b>{{size}} Meter<sup>2</sup></b>
+								<hr>
+								<h5>Guests</h5>
+								<hr>
+								<b>2 / 4 Guests</b>
+								<hr>
+								<p>Share a relaxing holiday retreat at this luxurious ocean view resort Bali blessed with the sound of the sea breeze and views of the ocean from the comfort of your own private balcony, with a floor-to-ceiling window allowing direct sunlight into your living space that is elegantly furnished with contemporary Balinese influences.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col aligncenter bgcolor4 fontcolour1">
+								<h5>Starts From {{price}},-</h5>
+						</div>
+				</div>
+			</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+	<!-- Dont Delete This-->
+<div class="bgcolor1 fontcolour1 bgcolor5" id="booking">
+	<button class="pt-2 pb-4 fontcolour1" data-toggle="modal" data-target="#BookingModal">Booking</button>
+</div>
+	<div class="container-fluid"> <!--Header -->
+		<div id="logoholder"style="padding-left: 9px; padding-top: 30px;">
+			<div>
+				<img src="logo.png" width="150" height="100">
+			</div>
+		</div>
+		<div id="logoholderbrown"></div>
+		<div id="logoholderbrowner"></div>
+		<div class="row">
+			<div class="col pt-3" id="headertop"></div>
+		</div>
+		<div class="row">
+			<div class="col" id="headerbody">
+				<div class="row" style="padding-left: 8em;">
+					<div class="col"><span class="oi oi-check"></span>&nbsp;Best <b>Rate</b></div>
+					<div class="col"><span class="oi oi-wifi"></span>&nbsp;Free <b>Wifi Access</b></div>
+					<div class="col"><span class="oi oi-phone"></span>&nbsp;Reservations <b>+081 777-888</b></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<nav class="navbar navbar-expand-sm sticky-top">
+	<div class="container-fluid" style="padding-left: 15em;">
+		<ul class="navbar-nav">
+  		<li class="nav-item">
+      		<a class="nav-link" href="index.html">Home</a>
+    	</li>
+  		<li class="nav-item">
+      		<a class="nav-link" href="Features.html">Features</a>
+    	</li>
+  		<li class="nav-item">
+      		<a class="nav-link" href="Dining1.html">Dining</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="Rooms.html">Rooms</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="#"  data-toggle="modal" data-target="#SpecialOffersModal">Offers</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="Blog.html">Blog & Press</a>
+    	</li>
+    	<li class="nav-item">
+      		<a class="nav-link" href="#">About Us</a>
+    	</li>
+	</ul>
+	</div>
+</nav>
+<div class="container-fluid bgcolor4 pb-4" style="padding-left: 150px; padding-right: 200px;">
+	<div class="row">
+		<div class="col aligncenter pt-3 pb-3 playfairfont fontcolour1"><h1>Rooms & Suites</h1></div>
+	</div>
+	<div class="row">
+		<div class="col-5">
+			<div class="row">
+				<div class="col bgcolorwhite pt-3" style="border-width: 2px; border-color: #e8cbb5">
+					<h4>Hotel Information</h4>
+					<hr>
+					<p><span class="oi oi-circle-check"> &nbsp;</span>Waktu Check-In jam 13.00 WIB</p>
+					<p><span class="oi oi-circle-check"> &nbsp;</span>Waktu Check-Out jam 12.00 WIB</p>
+					<p><span class="oi oi-circle-check"> &nbsp;</span>Menyediakan Internet dengan kecepatan 20 Mbps setiap kamarnya</p>
+					<p><span class="oi oi-circle-check"> &nbsp;</span>Menyediakan tempat bermain anak-anak dengan permainan yang lengkap disertai ruang tunggu orang tua yang nyaman</p>
+					<p><span class="oi oi-circle-check"> &nbsp;</span>Pembatalaan Booking tanpa dikenakan biaya</p>
+					<p><span class="oi oi-circle-check"> &nbsp;</span>Gratis makanan dan minuman bagi pengunjung baru</p>
+					<p><span class="oi oi-circle-check"> &nbsp;</span>Untuk pembayaran menggunakan Kartu Kredit, Kartu Kredit tersebut harus tetap aktif selama menginap di hotel</p>
+					<p><span class="oi oi-circle-check"> &nbsp;</span>Boleh membawa hewan peliharaan (Anjing dan kucing)</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div class="col offset-1">
+			<div class="row">
+				<div class="col bgcolorwhite">
+					<div class="row">
+						<div class="col-7 bgcolor2" style="padding-top: 150px; padding-bottom: 150px; background-image: url('Pictures/roomimage/regular1.jpg'); background-size: cover;">
+							<div class="row">
+								<div class="col-4 offset-4 fontcolour1"  style="position: absolute;">
+									<button class="fontcolour1"  data-toggle="modal" data-target="#RoomModal" ng-click="regularroom()">Learn More</button></div>
+							</div>
+						</div>
+						<div class="col pt-2">
+							<h4 class="playfairfont">Regular Room</h4>
+							<hr>
+							<h5 class="playfairfont">Starts From <b>Rp 1.500.000,-</b></h5>
+							<hr>
+							<span class="oi oi-people"></span> &nbsp;2 Guests & 4 Guests
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="row mt-3">
+				<div class="col bgcolorwhite">
+					<div class="row">
+						<div class="col-7 bgcolor2  testimage" style="padding-top: 150px; padding-bottom: 150px; background-image: url('Pictures/roomimage/deluxe1.jpg'); background-size: cover;">
+							<div class="row">
+								<div class="col-4 offset-4 fontcolour1"  style="position: absolute;">
+									<button class="fontcolour1"   data-toggle="modal" data-target="#RoomModal" ng-click="deluxeroom()">Learn More</button></div>
+							</div>
+						</div>
+						<div class="col pt-2">
+							<h4 class="playfairfont">Deluxe Room</h4>
+							<hr>
+							<h5 class="playfairfont">Starts From <b>Rp 2.500.000,-</b></h5>
+							<hr>
+							<span class="oi oi-people"></span> &nbsp;2 Guests & 4 Guests
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="row mt-3">
+				<div class="col bgcolorwhite">
+					<div class="row">
+						<div class="col-7 bgcolor2  testimage" style="padding-top: 150px; padding-bottom: 150px; background-image: url('Pictures/roomimage/president1.jpg'); background-size: cover;">
+							<div class="row">
+								<div class="col-4 offset-4 fontcolour1"  style="position: absolute;">
+									<button class="fontcolour1"   data-toggle="modal" data-target="#RoomModal" ng-click="presidentroom()">Learn More</button></div>
+							</div>
+						</div>
+						<div class="col pt-2">
+							<h4 class="playfairfont">Presidential Room</h4>
+							<hr>
+							<h5 class="playfairfont">Starts From <b>Rp 5.500.000,-</b></h5>
+							<hr>
+							<span class="oi oi-people"></span> &nbsp;4 Guests
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid bgcolor2 d-none d-sm-block"> <!--Footer-->
+	<div class="row aligncenter fontcolour1">
+		<div class="col pb-2">
+					<hr style="border-color: #e8cbb5;">
+		2022-2026 Palm Pacific International Hotel. All Rights Reserved
+	</div>
+	</div>
+</div>
+<!--Angular -->
+<script type="text/javascript">
+	var app = angular.module('MyApp', []);
+	app.controller('roomctrl', function($scope) {
+	    $scope.regularroom = function() {
+	    	$scope.roomtype = "Regular Room";
+	        $scope.size = "65";
+	        $scope.price = "Rp 1.500.000";
+	        $scope.image = "regular";
+	    }
+	    $scope.deluxeroom = function() {
+	    	$scope.roomtype = "Deluxe Room";
+	        $scope.size = "95";
+	        $scope.price = "Rp 4.500.000";
+	        $scope.image = "deluxe";
+	    }
+	    $scope.presidentroom = function() {
+	    	$scope.roomtype = "Presidential Room";
+	        $scope.size = "190";
+	        $scope.price = "Rp 11.500.000";
+	        $scope.image = "president";
+	    }
+});
+</script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
